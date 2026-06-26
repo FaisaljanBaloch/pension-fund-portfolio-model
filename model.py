@@ -26,5 +26,5 @@ model.optimize()
 if model.status == gp.GRB.OPTIMAL:
     print("Optimal solution found:")
     for bond in bonds:
-        print(f"{bond}: ${x[bond].x:.2f}")
-    print(f"Objective value: {model.objVal:.2f}")
+        print(f"{bond}: ${x[bond].x:,.2f}")
+    print(f"Objective value: {model.objVal:,.2f}")
